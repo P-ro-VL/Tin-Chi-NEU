@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Tool tự động đăng kí tín chỉ NEU"
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="index.css" defer/>
+  </head>
+  <body>
+    <div id="url-not-valid">
+      <h2 style="color: brown">Đây không phải trang tinchi.neu.edu.vn</h1>
+    </div>
+
+    <div id="root" style="display: none;">
+      <h2 style="text-align: center;">TOOL TỰ ĐỘNG ĐĂNG KÝ TÍN NEU</h2>
+      <h3 id="msv">Xin chào 000000</h3>
+      <div id="dataSection">
+        <h3>Nhập danh sách <b>mã lớp tín chỉ</b> <i>(tra ở phần Tra cứu học phần)</i> vào đây. Mỗi dòng một mã.</h3>
+        <textarea id="inputID" style="width: 100%; height: 100px;"></textarea>
+        <br/>
+        <button id="startButton">Bắt đầu chạy</button>
+        <button id="stopButton">Dừng lại</button>
+        <br/>
+        <br/>
+        <table id="dataTable" style="font-size: 10pt;">
+          <tr style="font-size: 12pt;">
+            <th>Lớp học phần</th>
+            <th>Trạng thái</th>
+            <th>Hành động</th>
+          </tr>
+        </table>
+      </div>  
+
+      <br/>
+
+      <div id="registeredSubjects"/>
+    </div>
+
+  </body>
+</html>

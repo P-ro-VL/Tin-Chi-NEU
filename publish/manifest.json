@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Tín chỉ NEU",
+  "description": "Tool tự động đăng kí tín chỉ dành cho sinh viên NEU",
+  "version": "1.0",
+  "icons": ["favicon.png"],
+  "action": {
+    "default_icon": "favicon.png",
+    "default_popup": "index.html"
+  },
+  "permissions": ["cookies", "tabs"],
+  "host_permissions": ["*://*.neu.edu.vn/"]
+}
